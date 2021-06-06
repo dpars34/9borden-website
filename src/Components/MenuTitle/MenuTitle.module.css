@@ -1,0 +1,30 @@
+.menuTitleArea {
+    height: 100vh;
+    background: url(MenuTitleBG.jpeg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.flexContainer {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+
+}
+
+.textArea {
+    text-align: center;
+}
+
+.menuTitle {
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.menuTitleText {
+    color: white;
+    margin: 0 15vw;
+}

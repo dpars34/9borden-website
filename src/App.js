@@ -1,4 +1,4 @@
-import styles from './App.module.css'
+import React, { useState, useEffect } from 'react'
 import AboutUs from './Components/AboutUs/AboutUs'
 import Access from './Components/Access/Access'
 import Carousel from './Components/Carousel/Carousel'
@@ -10,10 +10,37 @@ import MenuTitle from './Components/MenuTitle/MenuTitle'
 
 
 function App() {
+
+  const [ menuOpen, setMenuOpen ] = useState(false)
+    const [ onHomeScreen, setOnHomeScreen ] = useState(true)
+    const [ firstLoadNavbar, setfirstLoadNavbar ] = useState(true)
+
+    const openMenu = () => {
+        setMenuOpen(true)
+    }
+
+    const closeMenu = () => {
+        setMenuOpen(false)
+    }
+  
+    useEffect(() => {
+  
+      window.onscroll = () => {
+        if (window.scrollY >= window.innerHeight) {
+          setOnHomeScreen(false)
+          setfirstLoadNavbar(false)
+        }
+        if (window.scrollY < window.innerHeight) {
+          setOnHomeScreen(true)
+        }
+      }
+  
+    }, [onHomeScreen])
+
   return (
     <div>
-      <Header />
-      <AboutUs />
+      <Header menuOpen={menuOpen} onHomeScreen={onHomeScreen} firstLoadNavbar={firstLoadNavbar} openMenu={openMenu} closeMenu={closeMenu}/>
+      <AboutUs menuOpen={menuOpen} openMenu={openMenu} closeMenu={closeMenu}/>
       <InstagramFeed />
       <MenuTitle />
       <Menu />

@@ -1,0 +1,218 @@
+.headerPreload {
+    opacity: 0;
+}
+
+.header {
+    opacity: 1;
+    animation: fadein 0.2s;
+}
+
+.headerNone {
+    opacity: 0;
+    animation: fadeout 0.2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.navbarPreload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+
+.navbar {
+    position: fixed;
+    transform: translateX(-100vw);
+}
+
+.navbarOpen {
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    min-height: 100vh;
+    transform: translateX(0);
+    animation: open-menu 1s;
+}
+
+@keyframes open-menu {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.leftSide {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+   display: none;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    padding: 1rem;
+}
+
+.langButtons {
+    display: flex;
+}
+
+.socialMediaLinks {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.instagramIcon {
+    font-size: 1.5rem;
+}
+
+.facebookIcon {
+    font-size: 1.5rem;
+}
+
+.closeButton{
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.mobileNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.logoMobile {
+    height: 2.5rem;
+    width: auto;
+    margin: 0;
+    padding: 0.5rem 3rem 0.5rem 0;
+}
+
+.hamburgerButton {
+    font-size: 1.5rem;
+    margin: 1rem 0 0 1rem;
+}
+
+@media (min-width: 850px) {
+
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 5vw 0.5rem 5vw;
+        margin: 0;
+        min-height: auto;
+        transform: translateX(0);
+    }
+
+    .navbarOpen{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 5vw 0.5rem 5vw;
+        margin: 0;
+        min-height: auto;
+        transform: translateX(0);
+    }
+    
+    .leftSide {
+        margin: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .rightSide {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .logo {
+        display: block;
+        height: 2.5rem;
+        width: auto;
+        margin: 0rem 1rem 0rem 0;
+    }
+    
+    .navLink {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .socialMediaLinks {
+        display: flex;
+        margin-top: 0.5rem;
+        align-items: center;
+    }
+
+    .langButtons {
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+
+    .closeButton{
+        display: none;
+    }
+
+    .mobileNavbar {
+        display: none;
+    }
+}

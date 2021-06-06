@@ -1,0 +1,19 @@
+.footerArea {
+    background-color: #DCDCDC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 5vw;
+    flex-wrap: wrap;
+}
+
+.facebookIcon {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.instagramIcon {
+    font-size: 1.5rem;
+    color: black;
+    padding-left: 1rem;
+}
