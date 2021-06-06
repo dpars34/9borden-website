@@ -39,10 +39,12 @@ function AboutUs({ menuOpen, openMenu, closeMenu }) {
                 </div>
             </div>
 
-            <div className={styles.textArea}>
-                <h1 className={styles.aboutUsTitle}>About Us</h1>
-                <p className={styles.aboutUsText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis enim ut erat auctor, in egestas nisl euismod. Phasellus vitae aliquam mi. Aliquam euismod urna massa, quis tempor justo egestas et. Aliquam quis tellus ac ex vulputate condimentum eget quis justo. Nulla semper justo nec ante consequat varius.</p>
-            </div>
+            <div className={styles.flexContainer}>
+                <div className={styles.textArea}>
+                    <h1 className={styles.aboutUsTitle}>About Us</h1>
+                    <p className={styles.aboutUsText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis enim ut erat auctor, in egestas nisl euismod. Phasellus vitae aliquam mi. Aliquam euismod urna massa, quis tempor justo egestas et. Aliquam quis tellus ac ex vulputate condimentum eget quis justo. Nulla semper justo nec ante consequat varius.</p>
+                </div>
+            </div> 
 
         </div>
     )
