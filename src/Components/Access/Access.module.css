@@ -1,0 +1,16 @@
+.accessArea {
+    padding: 1rem 5vw;
+}
+
+.accessTitle {
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
