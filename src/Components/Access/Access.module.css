@@ -1,5 +1,6 @@
 .accessArea {
-    padding: 1rem 5vw;
+    padding: 1rem 10vw;
+    background-color: #F6F6F6;
 }
 
 .accessTitle {
@@ -11,6 +12,39 @@
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 10vw;
+}
 
+.locationArea {
+    flex: 1;
+    flex-shrink: 0;
+}
+
+.mapContainer {
+    margin-bottom: 2rem;
+}
+
+.map {
+    min-width: 100%;
+    height: 20rem;
+}
+
+.openingTimesFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+}
+
+.locationInfo {
+    display: inline-block;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 400px) {
+    .map {
+        width: 15rem;
+    }
 }
