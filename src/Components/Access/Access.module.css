@@ -20,10 +20,6 @@
     flex-shrink: 0;
 }
 
-.mapContainer {
-    margin-bottom: 2rem;
-}
-
 .map {
     min-width: 100%;
     height: 20rem;
@@ -32,11 +28,13 @@
 .openingTimesFlexContainer {
     display: flex;
     justify-content: space-between;
-    width: 12rem;
+    width: 15rem;
 }
 
-.locationInfo {
-    display: inline-block;
+.locationDetails {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 .icon {
