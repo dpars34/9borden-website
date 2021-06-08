@@ -12,30 +12,31 @@ import MenuTitle from './Components/MenuTitle/MenuTitle'
 function App() {
 
   const [ menuOpen, setMenuOpen ] = useState(false)
-    const [ onHomeScreen, setOnHomeScreen ] = useState(true)
-    const [ firstLoadNavbar, setfirstLoadNavbar ] = useState(true)
+  const [ onHomeScreen, setOnHomeScreen ] = useState(true)
+  const [ firstLoadNavbar, setfirstLoadNavbar ] = useState(true)
+  const [ isEnglish, setIsEnglish ] = useState(true)
 
-    const openMenu = () => {
-        setMenuOpen(true)
-    }
 
-    const closeMenu = () => {
-        setMenuOpen(false)
-    }
+  const openMenu = () => {
+      setMenuOpen(true)
+  }
+
+  const closeMenu = () => {
+      setMenuOpen(false)
+  }
   
-    useEffect(() => {
+   useEffect(() => {
   
-      window.onscroll = () => {
-        if (window.scrollY >= window.innerHeight) {
-          setOnHomeScreen(false)
-          setfirstLoadNavbar(false)
-        }
-        if (window.scrollY < window.innerHeight) {
-          setOnHomeScreen(true)
-        }
+    window.onscroll = () => {
+      if (window.scrollY >= window.innerHeight) {
+        setOnHomeScreen(false)
+        setfirstLoadNavbar(false)
       }
-  
-    }, [onHomeScreen])
+      if (window.scrollY < window.innerHeight) {
+        setOnHomeScreen(true)
+      }
+    }
+  }, [onHomeScreen])
 
   return (
     <div>
@@ -45,7 +46,7 @@ function App() {
       <MenuTitle />
       <Menu />
       <Carousel />
-      <Access />
+      <Access isEnglish={isEnglish}/>
       <Footer />
     </div>
   )
