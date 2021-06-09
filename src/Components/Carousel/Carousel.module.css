@@ -62,7 +62,7 @@
     padding: 1rem;
     color: white;
     background-color: teal;
-    animation: none;
+    cursor: pointer;
     opacity: 0.9;
 }
 
