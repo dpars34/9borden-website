@@ -1,4 +1,30 @@
+.carouselArea {
+    position: relative;
+    z-index: -1;
+}
+
 .image {
     height: auto;
     width: 100vw;
+}
+
+.arrowLeft {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    padding: 1rem;
+    color: white;
+    background-color: teal;
+    animation: none;
+}
+
+.arrowRight {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    right: 0%;
+    padding: 1rem;
+    color: white;
+    background-color: teal;
+    cursor: pointer;
 }

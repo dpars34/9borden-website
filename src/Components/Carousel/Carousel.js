@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Carousel.module.css'
 import carouselData from './carouselData'
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 
 function Carousel() {
@@ -9,6 +10,9 @@ function Carousel() {
 
     return(
         <div className={styles.carouselArea}>
+            <AiOutlineLeft className={styles.arrowLeft} />
+            <AiOutlineRight className={styles.arrowRight}/>
+
             {carouselData.map((image, index) => {
                 if (index === currentImage) {
                     return (
