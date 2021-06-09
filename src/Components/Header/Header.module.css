@@ -39,11 +39,13 @@
     right: 0;
     transform: translateX(-100vw);
     opacity: 0;
+    z-index: 100;
 }
 
 .navbar {
     position: fixed;
     transform: translateX(-100vw);
+    z-index: 100;
 }
 
 .navbarOpen {
@@ -58,6 +60,7 @@
     min-height: 100vh;
     transform: translateX(0);
     animation: open-menu 1s;
+    z-index: 100;
 }
 
 @keyframes open-menu {
@@ -126,6 +129,7 @@
     width: 100%;
     background-color: white;
     padding: 0.5rem 0 0.5rem 0;
+    z-index: 100;
 }
 
 .logoMobile {
@@ -156,6 +160,7 @@
         margin: 0;
         min-height: auto;
         transform: translateX(0);
+        z-index: 100;
     }
 
     .navbarOpen{
@@ -172,6 +177,7 @@
         margin: 0;
         min-height: auto;
         transform: translateX(0);
+        z-index: 100;
     }
     
     .leftSide {

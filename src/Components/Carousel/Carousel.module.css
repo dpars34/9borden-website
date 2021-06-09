@@ -37,6 +37,16 @@
     animation: fade-in 1s;
 }
 
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -54,6 +64,7 @@
     color: white;
     background-color: teal;
     animation: none;
+    opacity: 0.9;
 }
 
 .arrowRight {
@@ -64,4 +75,5 @@
     color: white;
     background-color: teal;
     cursor: pointer;
+    opacity: 0.9;
 }

@@ -6,7 +6,7 @@ import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 function Carousel() {
 
     const [ currentImage, setCurrentImage ] = useState(0)
-    const imageStyles = [styles.image1, styles.image2, styles.image3]
+    const imageStyles = [styles.image1, styles.image2, styles.image3, styles.image4]
 
     const nextImage = () => {
         if (currentImage === (imageStyles.length - 1)) {
