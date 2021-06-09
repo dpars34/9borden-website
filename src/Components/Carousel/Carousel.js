@@ -5,27 +5,47 @@ import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 function Carousel() {
 
-    const [ currentImage, setCurrentImage ] = useState(0)
-    const imageStyles = [styles.image1, styles.image2, styles.image3, styles.image4]
+    const [ currentImage, setCurrentImage ] = useState(1)
+    const imageStyles = [styles.null, styles.image1, styles.image2, styles.image3]
 
     const nextImage = () => {
         if (currentImage === (imageStyles.length - 1)) {
             setCurrentImage(0)
+            setTimeout(function() {
+                setCurrentImage(1)
+            }, 1)
         }
         else {
-            setCurrentImage(currentImage + 1)
+            setCurrentImage(0)
+            setTimeout(function() {
+                setCurrentImage(currentImage + 1)
+            }, 1)
         }
-
-        console.log(currentImage)
     }    
+
+    const prevImage = () => {
+        if (currentImage === 1) {
+            setCurrentImage(0)
+            setTimeout(function() {
+                setCurrentImage(imageStyles.length - 1)
+            }, 1)
+        }
+        else {
+            setCurrentImage(0)
+            setTimeout(function() {
+                setCurrentImage(currentImage - 1)
+            }, 1)
+        }
+    }
 
     return(
         <div>
             <div className={styles.carouselContainer} >
                 <div className={imageStyles[currentImage]}>
-                    <AiOutlineLeft className={styles.arrowLeft} />
-                    <AiOutlineRight className={styles.arrowRight} onClick={nextImage}/>
+                    
                 </div>
+                <AiOutlineLeft className={styles.arrowLeft} onClick={prevImage}/>
+                <AiOutlineRight className={styles.arrowRight} onClick={nextImage}/>
             </div>
             
             
