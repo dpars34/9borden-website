@@ -1,0 +1,67 @@
+.image1 {
+    height: 100vh;
+    background: url(./carousel_images/IMG_7556.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade-in 1s;
+}
+
+.image2 {
+    height: 100vh;
+    background: url(./carousel_images/IMG_7619.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade-in 1s;
+}
+
+.image3 {
+    height: 100vh;
+    background: url(./carousel_images/IMG_7629.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.arrowLeft {
+    font-size: 2rem;
+    top: 50%;
+    padding: 1rem;
+    color: white;
+    background-color: teal;
+    animation: none;
+}
+
+.arrowRight {
+    font-size: 2rem;
+    top: 50%;
+    right: 0%;
+    padding: 1rem;
+    color: white;
+    background-color: teal;
+    cursor: pointer;
+}
