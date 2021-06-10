@@ -1,9 +1,11 @@
 import React from 'react'
+import styles from './Menu.module.css'
+import FoodMenu from './FoodMenu/FoodMenu'
 
 function Menu() {
     return(
-        <div>
-            <h1>Menu</h1>
+        <div className={styles.menuArea}>
+            <FoodMenu />
         </div>
     )
 }

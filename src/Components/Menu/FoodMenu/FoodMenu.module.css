@@ -1,0 +1,38 @@
+.foodMenuArea {
+    padding: 2rem 10vw;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.singleItem {
+    display: flex;
+}
+
+
+.itemTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.itemPrice {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.extraInfo1 {
+    margin: 0;
+    padding: 0 0.2rem;
+    border: solid 1px black;
+    display: inline;
+    
+}
+
+.extraInfo2 {
+    margin: 0;
+    padding: 1rem;
+    font-style: italic;
+}
