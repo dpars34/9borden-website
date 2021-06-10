@@ -141,11 +141,8 @@
     }
 
     .navbarOpen{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: white;
+        position: static;
+        background-color: transparent;
         display: flex;
         flex-direction: row;
         align-items: center;
