@@ -1,0 +1,110 @@
+.carouselContainer {
+    height: 90vh;
+    position: relative;
+    background-color: #1B2D2B;
+}
+
+.image1 {
+    height: 90vh;
+    background: url(./carousel_images/IMG_7556.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade-in 1s;
+}
+
+.image2 {
+    height: 90vh;
+    background: url(./carousel_images/IMG_7619.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade-in 1s ease-in-out;
+}
+
+.image3 {
+    height: 90vh;
+    background: url(./carousel_images/IMG_7629.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.9)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.arrowLeft {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    padding: 1rem;
+    color: white;
+    background-color: teal;
+    cursor: pointer;
+    opacity: 0.9;
+    animation: reverse-animation 0.3s;
+}
+
+.arrowRight {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    right: 0%;
+    padding: 1rem;
+    color: white;
+    background-color: teal;
+    cursor: pointer;
+    opacity: 0.9;
+    animation: reverse-animation 0.3s;
+}
+
+.arrowLeft:hover{
+    animation: button-animation 0.3s forwards;
+}
+
+.arrowRight:hover{
+    animation: button-animation 0.3s forwards;
+}
+
+@keyframes button-animation {
+    0% {
+        transform: scale(1);
+    }
+    
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes reverse-animation {
+    0% {
+        transform: scale(1.1);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+
