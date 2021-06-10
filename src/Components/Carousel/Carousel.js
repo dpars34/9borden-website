@@ -13,13 +13,13 @@ function Carousel() {
             setCurrentImage(0)
             setTimeout(function() {
                 setCurrentImage(1)
-            }, 1)
+            }, 10)
         }
         else {
             setCurrentImage(0)
             setTimeout(function() {
                 setCurrentImage(currentImage + 1)
-            }, 1)
+            }, 10)
         }
     }    
 
