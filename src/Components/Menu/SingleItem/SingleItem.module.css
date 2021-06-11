@@ -1,0 +1,35 @@
+.singleItem {
+    display: flex;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.infoArea {
+    width: 100%;
+}
+
+.itemTitle {
+    margin: 0 0.5rem 0.3rem 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.itemPrice {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.extraInfo1 {
+    margin: 0;
+    padding: 0 0.2rem;
+    border: solid 1px black;
+    display: inline;
+    
+}
+
+.extraInfo2 {
+    margin: 0;
+    padding: 1rem 1rem 0 1rem;
+    font-style: italic;
+}

@@ -1,0 +1,20 @@
+.drinksMenuArea {
+    padding: 2rem 10vw;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 3rem;
+}
+
+.menuLeft {
+    flex: 1;
+}
+
+.menuRight {
+    flex: 1;
+    padding-top: 0;
+    margin-top: 0;
+}
