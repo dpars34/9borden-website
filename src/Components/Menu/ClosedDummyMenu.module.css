@@ -1,0 +1,13 @@
+.dummyMenu {
+    animation: close-menu 1s;
+}
+
+@keyframes close-menu {
+    0% {
+        height: 400px;
+    }
+
+    100% {
+        height: 0;
+    }
+}

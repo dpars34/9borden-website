@@ -1,0 +1,49 @@
+.menuArea {
+    background-color: #F6F6F6;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: zoom-out 0.3s forwards;
+}
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.buttonContainer:hover {
+    cursor: pointer;
+    animation: zoom-in 0.3s forwards;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.openMenuText {
+    margin: 0;
+}
+
+.arrow {
+    font-size: 2rem;
+}
