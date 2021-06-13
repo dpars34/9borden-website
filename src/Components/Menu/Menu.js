@@ -21,11 +21,10 @@ function Menu() {
             {foodMenuOpen ? <FoodMenu /> : <ClosedDummyMenu firstLoad={firstLoad}/>}
             <div className={styles.flexContainer}>
                 <div className={styles.buttonContainer} onClick={openMenu}>
-                    <p className={styles.openMenuText}>{foodMenuOpen ? "Close food menu" : "See food menu" }</p>
+                    <p className={styles.openMenuText}>{foodMenuOpen ? "Close food menu" : "Open food menu" }</p>
                     {foodMenuOpen ? <AiOutlineUp className={styles.arrow}/> : <AiOutlineDown className={styles.arrow}/>}
                 </div>
             </div>
-            
         </div>
     )
 }

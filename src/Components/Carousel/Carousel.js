@@ -48,7 +48,7 @@ function Carousel() {
                 <AiOutlineRight className={styles.arrowRight} onClick={nextImage}/>
             </div>
             
-            
+            <div id="access"></div>
         </div>
     )   
 }

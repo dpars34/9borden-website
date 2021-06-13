@@ -17,23 +17,23 @@ function Header({ menuOpen, onHomeScreen, firstLoadNavbar, openMenu, closeMenu }
 
             <div className={menuOpen ? styles.navbarOpen : styles.navbar}> {/* Navbar split into two sides, left and right */}
                 <div className={styles.leftSide}>
-                    <p onClick={closeMenu}className={styles.closeButton}><AiOutlineClose /></p>
-                    <img className={styles.logo}src={logo} alt=""/>
-                    <a className={styles.navLink} href="#instagram_feed">Instagram Feed</a>
-                    <a className={styles.navLink} href="#menu">Menu</a>
-                    <a className={styles.navLink} href="#access">Access</a>
+                    <p onClick={closeMenu} className={styles.closeButton}><AiOutlineClose /></p>
+                    <a href="/"><img className={styles.logo}src={logo} alt=""/></a>
+                    <a onClick={closeMenu} className={styles.navLink} href="#instagram-feed">Instagram Feed</a>
+                    <a onClick={closeMenu} className={styles.navLink} href="#menu-title">Menu</a>
+                    <a onClick={closeMenu} className={styles.navLink} href="#access">Access</a>
                 </div>
 
                 <div className={styles.rightSide}>
                     <div className={styles.socialMediaLinks}>
-                        <a className={`${styles.navLink} ${styles.facebookIcon}`} href="#facebook"><FaFacebook /></a>
-                        <a className={`${styles.navLink} ${styles.instagramIcon}`} href="#instagram"><FaInstagram /></a>
+                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.facebookIcon}`} target="_blank" href="https://www.facebook.com/9bordencoffee/"><FaFacebook /></a>
+                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.instagramIcon}`} target="_blank" href="https://www.instagram.com/9bordencoffee/?hl=en"><FaInstagram /></a>
                     </div>
 
                     <div className={styles.langButtons}>
-                        <p className={`${styles.navLink} ${styles.englishButton}`}>English</p>
+                        <p onClick={closeMenu} className={`${styles.navLink} ${styles.englishButton}`}>English</p>
                         <p className={styles.navLink}>|</p>
-                        <p className={`${styles.navLink} ${styles.japaneseButton}`}>日本語</p>
+                        <p onClick={closeMenu} className={`${styles.navLink} ${styles.japaneseButton}`}>日本語</p>
                     </div>
 
                 </div>

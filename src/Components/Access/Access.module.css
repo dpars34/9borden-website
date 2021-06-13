@@ -1,5 +1,5 @@
 .accessArea {
-    padding: 1rem 10vw;
+    padding: 2rem 13vw 1rem 13vw;
     background-color: #F6F6F6;
 }
 
@@ -12,13 +12,15 @@
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 10vw;
+    column-gap: 10vw;
+    padding-bottom: 2rem;
 }
 
 .locationArea {
     flex: 1;
     flex-shrink: 0;
     margin-right: 0.5rem;
+    padding-bottom: 0;
 }
 
 .map {
