@@ -14,7 +14,7 @@ function SingleItem({ itemData }) {
             </div>
                         
             <div className={styles.priceArea}>
-                <p className={styles.itemPrice}>{price}</p>
+                {price ? <p className={styles.itemPrice}>{price}</p> : null}
             </div>
         </div>
     )

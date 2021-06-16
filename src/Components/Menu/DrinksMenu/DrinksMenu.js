@@ -1,19 +1,25 @@
 import React from 'react'
 import styles from './DrinksMenu.module.css'
 import SingleItem from '../SingleItem/SingleItem'
-import { drinksMenuLeftEnglish, drinksMenuRightEnglish } from '../menuData'
+import { drinksMenuLeftEnglish, drinksMenuRightEnglish, drinksMenuLeftJapanese, drinksMenuRightJapanese } from '../menuData'
 import image1 from './drinks_menu_images/drinks_img1.jpg'
 import image2 from './drinks_menu_images/drinks_img2.jpg'
 import image3 from './drinks_menu_images/drinks_img3.jpg'
 
 
-function DrinksMenu() {
+function DrinksMenu({isEnglish}) {
     return (
         <div className={styles.drinksMenuArea}>
             <h2　className={styles.drinksMenuTitle}>Drinks</h2>
             <div className={styles.flexContainer}>
                 <div className={styles.menuLeft}>
-                    {drinksMenuLeftEnglish.map((item) => {
+                    {isEnglish ? drinksMenuLeftEnglish.map((item) => {
+                        return (
+                            <SingleItem itemData={item} key={item.name}/>
+                        )
+                    }) 
+                    
+                    : drinksMenuLeftJapanese.map((item) => {
                         return (
                             <SingleItem itemData={item} key={item.name}/>
                         )
@@ -21,7 +27,13 @@ function DrinksMenu() {
                 </div>
 
                 <div className={styles.menuRight}>
-                    {drinksMenuRightEnglish.map((item) => {
+                    {isEnglish ? drinksMenuRightEnglish.map((item) => {
+                        return (
+                            <SingleItem itemData={item} key={item.name}/>
+                        )
+                    })
+                
+                    : drinksMenuRightJapanese.map((item) => {
                         return (
                             <SingleItem itemData={item} key={item.name}/>
                         )

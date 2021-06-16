@@ -24,6 +24,16 @@ function App() {
   const closeMenu = () => {
       setMenuOpen(false)
   }
+
+  const toEnglish = () => {
+    setIsEnglish(true)
+    console.log("toEnglish")
+  }
+
+  const toJapanese = () => {
+    setIsEnglish(false)
+    console.log("toJapanese")
+  }
   
    useEffect(() => {
   
@@ -40,11 +50,11 @@ function App() {
 
   return (
     <div>
-      <Header menuOpen={menuOpen} onHomeScreen={onHomeScreen} firstLoadNavbar={firstLoadNavbar} openMenu={openMenu} closeMenu={closeMenu}/>
-      <AboutUs menuOpen={menuOpen} openMenu={openMenu} closeMenu={closeMenu}/>
+      <Header menuOpen={menuOpen} onHomeScreen={onHomeScreen} firstLoadNavbar={firstLoadNavbar} openMenu={openMenu} closeMenu={closeMenu} toEnglish={toEnglish} toJapanese={toJapanese} isEnglish={isEnglish}/>
+      <AboutUs menuOpen={menuOpen} openMenu={openMenu} closeMenu={closeMenu} toEnglish={toEnglish} toJapanese={toJapanese} isEnglish={isEnglish}/>
       <InstagramFeed />
       <MenuTitle />
-      <Menu />
+      <Menu isEnglish={isEnglish}/>
       <Carousel />
       <Access isEnglish={isEnglish}/>
       <Footer />

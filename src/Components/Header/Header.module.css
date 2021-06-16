@@ -93,6 +93,7 @@
     color: black;
     align-items: center;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .langButtons {
@@ -200,6 +201,7 @@
     
     .navLink {
         padding: 0 1rem 0 1rem;
+        cursor: pointer;
     }
 
     .socialMediaLinks {

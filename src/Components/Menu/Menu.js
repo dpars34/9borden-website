@@ -5,7 +5,7 @@ import FoodMenu from './FoodMenu/FoodMenu'
 import { AiOutlineUp, AiOutlineDown } from 'react-icons/ai'
 import ClosedDummyMenu from './ClosedDummyMenu'
 
-function Menu() {
+function Menu({isEnglish}) {
 
     const [ foodMenuOpen, setFoodMenuOpen ] = useState(false)
     const [ firstLoad, setFirstLoad ] = useState(true)
@@ -17,8 +17,8 @@ function Menu() {
 
     return(
         <div className={styles.menuArea}>
-            <DrinksMenu />
-            {foodMenuOpen ? <FoodMenu /> : <ClosedDummyMenu firstLoad={firstLoad}/>}
+            <DrinksMenu isEnglish={isEnglish}/>
+            {foodMenuOpen ? <FoodMenu isEnglish={isEnglish}/> : <ClosedDummyMenu firstLoad={firstLoad}/>}
             <div className={styles.flexContainer}>
                 <div className={styles.buttonContainer} onClick={openMenu}>
                     <p className={styles.openMenuText}>{foodMenuOpen ? "Close food menu" : "Open food menu" }</p>

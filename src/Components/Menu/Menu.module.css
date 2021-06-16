@@ -1,5 +1,6 @@
 .menuArea {
     background-color: #F6F6F6;
+    white-space: pre-wrap;
 }
 
 .flexContainer {

@@ -1,18 +1,24 @@
 import React from 'react'
 import styles from './FoodMenu.module.css'
 import SingleItem from '../SingleItem/SingleItem'
-import { foodMenuLeftEnglish, foodMenuRightEnglish } from '../menuData'
+import { foodMenuLeftEnglish, foodMenuRightEnglish, foodMenuLeftJapanese, foodMenuRightJapanese } from '../menuData'
 import image1 from './food_menu_images/drinks_img1.jpg'
 import image2 from './food_menu_images/drinks_img2.jpg'
 import image3 from './food_menu_images/drinks_img3.jpg'
 
-function FoodMenu() {
+function FoodMenu({isEnglish}) {
     return (
         <div className={styles.foodMenuArea}>
             <h2　className={styles.foodMenuTitle}>Food</h2>
             <div className={styles.flexContainer}>
                 <div className={styles.menuLeft}>
-                    {foodMenuLeftEnglish.map((item) => {
+                    {isEnglish ? foodMenuLeftEnglish.map((item) => {
+                        return (
+                            <SingleItem itemData={item} key={item.name}/>
+                        )
+                    })
+                
+                    :foodMenuLeftJapanese.map((item) => {
                         return (
                             <SingleItem itemData={item} key={item.name}/>
                         )
@@ -20,7 +26,13 @@ function FoodMenu() {
                 </div>
 
                 <div className={styles.menuRight}>
-                    {foodMenuRightEnglish.map((item) => {
+                    {isEnglish ? foodMenuRightEnglish.map((item) => {
+                        return (
+                            <SingleItem itemData={item} key={item.name}/>
+                        )
+                    })
+                
+                    : foodMenuRightJapanese.map((item) => {
                         return (
                             <SingleItem itemData={item} key={item.name}/>
                         )

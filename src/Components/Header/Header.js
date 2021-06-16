@@ -5,7 +5,7 @@ import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-function Header({ menuOpen, onHomeScreen, firstLoadNavbar, openMenu, closeMenu }) {
+function Header({ menuOpen, onHomeScreen, firstLoadNavbar, openMenu, closeMenu, toEnglish, toJapanese, isEnglish}) {
 
     return(
         <header className={firstLoadNavbar ? styles.headerPreload : onHomeScreen ? styles.headerNone : styles.header}>
@@ -26,14 +26,14 @@ function Header({ menuOpen, onHomeScreen, firstLoadNavbar, openMenu, closeMenu }
 
                 <div className={styles.rightSide}>
                     <div className={styles.socialMediaLinks}>
-                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.facebookIcon}`} target="_blank" href="https://www.facebook.com/9bordencoffee/"><FaFacebook /></a>
-                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.instagramIcon}`} target="_blank" href="https://www.instagram.com/9bordencoffee/?hl=en"><FaInstagram /></a>
+                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.facebookIcon}`} target="_blank" rel="noreferrer" href="https://www.facebook.com/9bordencoffee/"><FaFacebook /></a>
+                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.instagramIcon}`} target="_blank" rel="noreferrer" href="https://www.instagram.com/9bordencoffee/?hl=en"><FaInstagram /></a>
                     </div>
 
                     <div className={styles.langButtons}>
-                        <p onClick={closeMenu} className={`${styles.navLink} ${styles.englishButton}`}>English</p>
+                        <p onClick={() => { closeMenu(); toEnglish();}} className={styles.navLink}>English</p>
                         <p className={styles.navLink}>|</p>
-                        <p onClick={closeMenu} className={`${styles.navLink} ${styles.japaneseButton}`}>日本語</p>
+                        <p onClick={() => { closeMenu(); toJapanese();}} className={styles.navLink}>日本語</p>
                     </div>
 
                 </div>

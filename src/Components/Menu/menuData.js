@@ -10,7 +10,7 @@ export const drinksMenuLeftEnglish = [
         name: "Latte",
         price: "500",
         extraInfo1: "Hot/Iced",
-        extraInfo2: "Selection of syrups and milk alternatives."
+        extraInfo2: `+ Creme Brulee Syrup +50\n+ Maple & Cinnamon +50\n+ Extra Shot +50\n+ Almond Milk +50\n+ Oat Milk +50`
     },
 
     {
@@ -110,19 +110,31 @@ export const drinksMenuRightEnglish = [
 
 export const foodMenuLeftEnglish = [
     {
-        name: "Egg & Cheese Hot Sandwich",
+        name: 'Hot Sandwich'
+    },
+
+    {
+        name: "Egg & Cheese",
         price: "500",
     },
 
     {
-        name: "Tuna Melt Hot Sandwich",
+        name: "Tuna Melt",
         price: "450",
     },
 
     {
-        name: "Ham & Cheese Hot Sandwich",
+        name: "Ham & Cheese",
         price: "500",
         extraInfo2: "w/ Honey mustard sauce"
+    },
+
+    {
+        name: ""
+    },
+
+    {
+        name: "Burrito"
     },
 
     {
@@ -148,6 +160,14 @@ export const foodMenuRightEnglish = [
     },
 
     {
+        name: ""
+    },
+
+    {
+        name: "Dessert"
+    },
+
+    {
         name: "Açaí bowl",
         price: "750",
     },
@@ -155,5 +175,191 @@ export const foodMenuRightEnglish = [
     {
         name: "Affogato",
         price: "650",
+        extraInfo2: "50 yen off without espresso"
+    }
+]
+
+//Japanese menu below
+
+export const drinksMenuLeftJapanese = [
+    {
+        name: "ドリップコーヒー",
+        price: "450",
+        extraInfo1: "Hot/Iced",
+        extraInfo2: "ご希望の方はコーヒー豆の種類をお選びいただけます。"
+    },
+
+    {
+        name: "カフェラテ",
+        price: "500",
+        extraInfo1: "Hot/Iced",
+        extraInfo2: `+ クリームブリュレ シロップ +50\n+ メープルシナモン シロップ +50\n+ ショット追加 +50\n+ アーモンドミルク +50\n+ オーツミルク +50`
+    },
+
+    {
+        name: "エスプレッソ",
+        price: "400",
+        extraInfo2: "ごく少量の濃縮したコーヒー"
+    },
+
+    {
+        name: "アメリカーノ",
+        price: "400"
+    },
+
+    {
+        name: "カプチーノ (フラットホワイト)",
+        price: "450"
+    },
+
+    {
+        name: "モカ",
+        price: "550"
+    },
+    
+    {
+        name: "抹茶ラテ",
+        price: "500",
+        extraInfo1: "Hot/Iced",
+    },
+
+    {
+        name: "ほうじ茶ラテ",
+        price: "500",
+        extraInfo1: "Hot/Iced",
+    },
+
+    {
+        name: "ロイヤルティーラテ",
+        price: "500",
+        extraInfo1: "Hot/Iced",
+    },
+]
+
+export const drinksMenuRightJapanese = [
+    {
+        name: "ホットチョコレート/アイスチョコレート",
+        price: "500",
+        extraInfo1: "Hot/Iced",
+    },
+
+    {
+        name: "チャイラテ",
+        price: "500",
+        extraInfo1: "Hot Only",
+    },
+    
+    {
+        name: "ストロベリーミルク",
+        price: "500",
+        extraInfo1: "Iced Only",
+    },
+
+    {
+        name: "ティー (数種類)",
+        price: "400",
+        extraInfo1: "Hot/Iced",
+    },
+
+    {
+        name: "アップル/オレンジジュース",
+        price: "350",
+    },
+
+    {
+        name: "オーシャンブリーズ",
+        price: "500",
+    },
+
+    {
+        name: "ゆずアップルサイダー",
+        price: "500",
+    },
+
+    {
+        name: "レモネード (炭酸)",
+        price: "500",
+    },
+
+    {
+        name: "マンゴーソーダ",
+        price: "450",
+    },
+
+    {
+        name: "カシス & ベリーソーダ",
+        price: "450",
+    }
+]
+
+export const foodMenuLeftJapanese = [
+    {
+        name: 'ホットサンドウィッチ3種'
+    },
+
+    {
+        name: "エッグ & チーズ",
+        price: "500",
+    },
+
+    {
+        name: "ツナメルト",
+        price: "450",
+    },
+
+    {
+        name: "ハム & チーズ",
+        price: "500",
+        extraInfo2: "ハニーマスタードソース"
+    },
+
+    {
+        name: ""
+    },
+
+    {
+        name: "ブリトー3種"
+    },
+
+    {
+        name: "ブレックファースト ブリト",
+        price: "950",
+        extraInfo1: "Vegetarian option available",
+        extraInfo2: "豆、卵、ソーセージ、チーズ、アボカド、ピーマン、トマト"
+    },
+]
+
+export const foodMenuRightJapanese = [
+    {
+        name: "チキン　ブリトー",
+        price: "1050",
+        extraInfo1: "Vegetarian option available",
+        extraInfo2: "豆、鶏肉、チーズ、玄米、アボカド、ピーマン、トマト、玉ねぎ、パクチー、ハラペーニョ"
+    },
+
+    {
+        name: "ヴィーガン ブリトー",
+        price: "950",
+        extraInfo1: "ヴィーガン ＝ 動物性の食品を使っておりません",
+        extraInfo2: "豆、焼き野菜、玄米、アボカド、ピーマン、トマト、玉ねぎ、パクチー、ハラペーニョ"
+    },
+
+    {
+        name: ""
+    },
+
+    {
+        name: "デザート"
+    },
+
+    {
+        name: "アサイーボール",
+        price: "750",
+    },
+
+    {
+        name: "アフォガード",
+        price: "650",
+        extraInfo2: "エスプレッソ無しは50円引き"
     }
 ]
