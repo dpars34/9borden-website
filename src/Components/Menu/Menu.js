@@ -21,7 +21,7 @@ function Menu({isEnglish}) {
             {foodMenuOpen ? <FoodMenu isEnglish={isEnglish}/> : <ClosedDummyMenu firstLoad={firstLoad}/>}
             <div className={styles.flexContainer}>
                 <div className={styles.buttonContainer} onClick={openMenu}>
-                    <p className={styles.openMenuText}>{foodMenuOpen ? "Close food menu" : "Open food menu" }</p>
+                    <p className={styles.openMenuText}>{foodMenuOpen ? isEnglish ? "Close food menu" : "閉じる" : isEnglish ? "Open food menu" : "フードメニューを見る"}</p>
                     {foodMenuOpen ? <AiOutlineUp className={styles.arrow}/> : <AiOutlineDown className={styles.arrow}/>}
                 </div>
             </div>

@@ -5,6 +5,12 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
+}
+
+.navDiv {
+    position: absolute;
+    top: -70px;
 }
 
 .flexContainer {

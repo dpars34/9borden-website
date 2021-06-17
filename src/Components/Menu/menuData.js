@@ -185,14 +185,14 @@ export const drinksMenuLeftJapanese = [
     {
         name: "ドリップコーヒー",
         price: "450",
-        extraInfo1: "Hot/Iced",
+        extraInfo1: "ホット/アイス",
         extraInfo2: "ご希望の方はコーヒー豆の種類をお選びいただけます。"
     },
 
     {
         name: "カフェラテ",
         price: "500",
-        extraInfo1: "Hot/Iced",
+        extraInfo1: "ホット/アイス",
         extraInfo2: `+ クリームブリュレ シロップ +50\n+ メープルシナモン シロップ +50\n+ ショット追加 +50\n+ アーモンドミルク +50\n+ オーツミルク +50`
     },
 
@@ -220,19 +220,19 @@ export const drinksMenuLeftJapanese = [
     {
         name: "抹茶ラテ",
         price: "500",
-        extraInfo1: "Hot/Iced",
+        extraInfo1: "ホット/アイス",
     },
 
     {
         name: "ほうじ茶ラテ",
         price: "500",
-        extraInfo1: "Hot/Iced",
+        extraInfo1: "ホット/アイス",
     },
 
     {
         name: "ロイヤルティーラテ",
         price: "500",
-        extraInfo1: "Hot/Iced",
+        extraInfo1: "ホット/アイス",
     },
 ]
 
@@ -240,25 +240,25 @@ export const drinksMenuRightJapanese = [
     {
         name: "ホットチョコレート/アイスチョコレート",
         price: "500",
-        extraInfo1: "Hot/Iced",
+        extraInfo1: "ホット/アイス",
     },
 
     {
         name: "チャイラテ",
         price: "500",
-        extraInfo1: "Hot Only",
+        extraInfo1: "ホットのみ",
     },
     
     {
         name: "ストロベリーミルク",
         price: "500",
-        extraInfo1: "Iced Only",
+        extraInfo1: "アイスのみ",
     },
 
     {
         name: "ティー (数種類)",
         price: "400",
-        extraInfo1: "Hot/Iced",
+        extraInfo1: "ホット/アイス",
     },
 
     {
@@ -324,7 +324,6 @@ export const foodMenuLeftJapanese = [
     {
         name: "ブレックファースト ブリト",
         price: "950",
-        extraInfo1: "Vegetarian option available",
         extraInfo2: "豆、卵、ソーセージ、チーズ、アボカド、ピーマン、トマト"
     },
 ]
@@ -333,7 +332,6 @@ export const foodMenuRightJapanese = [
     {
         name: "チキン　ブリトー",
         price: "1050",
-        extraInfo1: "Vegetarian option available",
         extraInfo2: "豆、鶏肉、チーズ、玄米、アボカド、ピーマン、トマト、玉ねぎ、パクチー、ハラペーニョ"
     },
 

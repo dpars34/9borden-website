@@ -21,6 +21,7 @@
     color: white;
     font-size: 3rem;
     font-weight: 400;
+    padding: 1rem 15vw;
 }
 
 .aboutUsText {
@@ -81,6 +82,10 @@
     cursor: pointer;
 }
 
+.navLink:hover {
+    text-decoration: underline;
+}
+
 .langButtons {
     display: flex;
 }
@@ -124,6 +129,15 @@
     font-size: 1.5rem;
     margin: 1rem 0 0 1rem;
     color: white;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.bolder:hover {
+    cursor: auto;
+    text-decoration: none;
 }
 
 @media (min-width: 850px) {
@@ -177,7 +191,7 @@
         color: white;
         cursor: pointer;
     }
-
+  
     .socialMediaLinks {
         display: flex;
         margin-top: 0.5rem;
@@ -196,5 +210,14 @@
 
     .mobileNavbar {
         display: none;
+    }
+
+    .bolder {
+        font-weight: bolder;
+    }
+    
+    .bolder:hover {
+        cursor: auto;
+        text-decoration: none;
     }
 }

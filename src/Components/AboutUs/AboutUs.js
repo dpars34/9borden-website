@@ -32,17 +32,19 @@ function AboutUs({ menuOpen, openMenu, closeMenu, toEnglish, toJapanese, isEngli
                     </div>
 
                     <div className={styles.langButtons}>
-                        <p onClick={() => { closeMenu(); toEnglish();}} className={styles.navLink}>English</p>
+                        <p onClick={() => { closeMenu(); toEnglish();}} className={isEnglish ? `${styles.navLink} ${styles.bolder}` : styles.navLink}>English</p>
                         <p className={styles.navLink}>|</p>
-                        <p onClick={() => { closeMenu(); toJapanese();}} className={styles.navLink}>日本語</p>
+                        <p onClick={() => { closeMenu(); toJapanese();}} className={isEnglish ? styles.navLink : `${styles.navLink} ${styles.bolder}`}>日本語</p>
                     </div>
                 </div>
             </div>
 
             <div className={styles.flexContainer}>
                 <div className={styles.textArea}>
-                    <h1 className={styles.aboutUsTitle}>About Us</h1>
-                    <p className={styles.aboutUsText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis enim ut erat auctor, in egestas nisl euismod. Phasellus vitae aliquam mi. Aliquam euismod urna massa, quis tempor justo egestas et. Aliquam quis tellus ac ex vulputate condimentum eget quis justo. Nulla semper justo nec ante consequat varius.</p>
+                    <h1 className={styles.aboutUsTitle}>Make Yourself At Home</h1>
+                    <p className={styles.aboutUsText}>{isEnglish ? "The name “9 Borden” was taken from a share house in Toronto. It is the actual address of the house. We enjoyed our time there so much that we hope everyone could also experience this feeling, that is why we named our shop after it." : "9 Borden Coffee の名前の由来はカナダのトロントにあるシェアハウスの住所です。経営してます私ども夫婦はカナダで一緒のカフェで働き、ナインボーデンのシェアハウスで思い出を築きました。" }</p>
+                    <br />
+                    <p className={styles.aboutUsText}> {isEnglish ? "Here at 9 Borden Coffee we hope everyone from all walks of life can enjoy our space and just chill out like it’s their second home." : "あの楽しかった毎日を、海外のような開放感のある自由な空間を、日本でも。ナインボーデンのように、お客様もスタッフもみんなが楽しくのんびり過ごせますように願いを込めました。" }</p>
                 </div>
             </div> 
         </div>

@@ -96,6 +96,10 @@
     cursor: pointer;
 }
 
+.navLink:hover {
+    text-decoration: underline;
+}
+
 .langButtons {
     display: flex;
 }
@@ -143,6 +147,15 @@
 .hamburgerButton {
     font-size: 1.5rem;
     margin: 1rem 0 0 1rem;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.bolder:hover {
+    cursor: auto;
+    text-decoration: none;
 }
 
 @media (min-width: 850px) {
@@ -204,6 +217,10 @@
         cursor: pointer;
     }
 
+    .navLink:hover {
+        text-decoration: underline;
+    }
+
     .socialMediaLinks {
         display: flex;
         margin-top: 0.5rem;
@@ -222,5 +239,14 @@
 
     .mobileNavbar {
         display: none;
+    }
+
+    .bolder {
+        font-weight: bolder;
+    }
+    
+    .bolder:hover {
+        cursor: auto;
+        text-decoration: none;
     }
 }

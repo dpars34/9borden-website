@@ -7,6 +7,7 @@ import { RiPhoneFill } from 'react-icons/ri'
 function Access({isEnglish}) {
     return(
         <div className={styles.accessArea}>
+            <div className={styles.navDiv} id="access"></div>
             <h1 className={styles.accessTitle}>Access</h1>
 
             <div className={styles.flexContainer}>
@@ -20,7 +21,7 @@ function Access({isEnglish}) {
                         
                     <div className={styles.locationDetails}>
                         <HiLocationMarker className={styles.icon}/>
-                        <p>{isEnglish ? "3 Chome-7-15 Chikko, Minato Ward, Osaka, 552-0021" : "大阪市港区築港３丁目７−１５ 港振興ビル １１１号室"}</p>
+                        <p>{isEnglish ? "3 Chome-7-15 Chikko, Minato Ward, Osaka, 552-0021" : "大阪市港区築港3丁目7−15 港振興ビル 111号室"}</p>
                     </div>
                         
                     <div className={styles.locationDetails}>

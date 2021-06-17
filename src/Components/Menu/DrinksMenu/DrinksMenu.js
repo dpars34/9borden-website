@@ -44,17 +44,17 @@ function DrinksMenu({isEnglish}) {
             <div className={styles.imagesArea}>
                 <div className={styles.singleImage}>
                     <img className={styles.menuImage}src={image1} alt="Food menu"/>
-                    <p className={styles.caption}>Description</p>
+                    <p className={styles.caption}>{isEnglish ? "Ocean Breeze" : "オーシャンブリーズ"}<br />{isEnglish ? "500 yen" : "500円"}</p>
                 </div>
 
                 <div className={styles.singleImage}>
                     <img className={styles.menuImage}src={image2} alt="Food menu"/>
-                    <p className={styles.caption}>Description</p>
+                    <p className={styles.caption}>{isEnglish ? "Hot Chocolate" : "ホットチョコレート"}<br />{isEnglish ? "500 yen" : "500円"}</p>
                 </div>
 
                 <div className={styles.singleImage}>
                     <img className={styles.menuImage}src={image3} alt="Food menu"/>
-                    <p className={styles.caption}>Description</p>
+                    <p className={styles.caption}>{isEnglish ? "Hot Latte (Maple Cinnamon)" : "ホットラテ(メープルシナモン)"}<br />{isEnglish ? "550 yen" : "550円"}</p>
                 </div>
             </div>
         </div>

@@ -1,6 +1,12 @@
 .accessArea {
     padding: 2rem 13vw 1rem 13vw;
     background-color: #F6F6F6;
+    position: relative;
+}
+
+.navDiv {
+    position: absolute;
+    top: -70px;
 }
 
 .accessTitle {

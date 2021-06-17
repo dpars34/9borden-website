@@ -37,6 +37,7 @@
     height: 12rem;
     flex: 1;
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .menuImage {
@@ -44,4 +45,8 @@
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+}
+
+.caption {
+    margin-bottom: 1rem;
 }

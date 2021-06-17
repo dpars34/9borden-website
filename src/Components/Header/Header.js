@@ -20,7 +20,7 @@ function Header({ menuOpen, onHomeScreen, firstLoadNavbar, openMenu, closeMenu, 
                     <p onClick={closeMenu} className={styles.closeButton}><AiOutlineClose /></p>
                     <a href="/"><img className={styles.logo}src={logo} alt=""/></a>
                     <a onClick={closeMenu} className={styles.navLink} href="#instagram-feed">Instagram Feed</a>
-                    <a onClick={closeMenu} className={styles.navLink} href="#menu-title">Menu</a>
+                    <a onClick={closeMenu} className={styles.navLink} href="#menu">Menu</a>
                     <a onClick={closeMenu} className={styles.navLink} href="#access">Access</a>
                 </div>
 
@@ -31,9 +31,9 @@ function Header({ menuOpen, onHomeScreen, firstLoadNavbar, openMenu, closeMenu, 
                     </div>
 
                     <div className={styles.langButtons}>
-                        <p onClick={() => { closeMenu(); toEnglish();}} className={styles.navLink}>English</p>
+                        <p onClick={() => { closeMenu(); toEnglish();}} className={isEnglish ? `${styles.navLink} ${styles.bolder}` : styles.navLink}>English</p>
                         <p className={styles.navLink}>|</p>
-                        <p onClick={() => { closeMenu(); toJapanese();}} className={styles.navLink}>日本語</p>
+                        <p onClick={() => { closeMenu(); toJapanese();}} className={isEnglish ? styles.navLink : `${styles.navLink} ${styles.bolder}`}>日本語</p>
                     </div>
 
                 </div>

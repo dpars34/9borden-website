@@ -53,7 +53,7 @@ function App() {
       <Header menuOpen={menuOpen} onHomeScreen={onHomeScreen} firstLoadNavbar={firstLoadNavbar} openMenu={openMenu} closeMenu={closeMenu} toEnglish={toEnglish} toJapanese={toJapanese} isEnglish={isEnglish}/>
       <AboutUs menuOpen={menuOpen} openMenu={openMenu} closeMenu={closeMenu} toEnglish={toEnglish} toJapanese={toJapanese} isEnglish={isEnglish}/>
       <InstagramFeed />
-      <MenuTitle />
+      <MenuTitle isEnglish={isEnglish}/>
       <Menu isEnglish={isEnglish}/>
       <Carousel />
       <Access isEnglish={isEnglish}/>
