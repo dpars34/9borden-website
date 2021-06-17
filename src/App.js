@@ -14,7 +14,7 @@ function App() {
   const [ menuOpen, setMenuOpen ] = useState(false)
   const [ onHomeScreen, setOnHomeScreen ] = useState(true)
   const [ firstLoadNavbar, setfirstLoadNavbar ] = useState(true)
-  const [ isEnglish, setIsEnglish ] = useState(true)
+  const [ isEnglish, setIsEnglish ] = useState(false)
 
 
   const openMenu = () => {

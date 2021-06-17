@@ -1,16 +1,18 @@
 .aboutUsSection{
-    height: 100vh;
+    min-height: 100vh;
     background: url(AboutUsBG.jpeg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-bottom: 2rem;
 }
 
 .flexContainer {
     display: flex;
     align-items: center;
-    height: 70vh;
+    min-height: 70vh;
+    
 }
 
 .textArea {
@@ -138,6 +140,15 @@
 .bolder:hover {
     cursor: auto;
     text-decoration: none;
+}
+
+.clickable {
+    font-weight: bolder;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media (min-width: 850px) {
