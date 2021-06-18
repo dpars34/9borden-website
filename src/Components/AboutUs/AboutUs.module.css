@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     min-height: 70vh;
-    
 }
 
 .textArea {
@@ -149,6 +148,10 @@
 .clickable:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.wifiOutlets{
+    position: absolute;
 }
 
 @media (min-width: 850px) {

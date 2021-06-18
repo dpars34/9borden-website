@@ -31,7 +31,7 @@ function Access({isEnglish}) {
                         
                     <div className={styles.locationDetails}>
                         <RiPhoneFill className={styles.icon}/>
-                        <p>{isEnglish ? "080-1234-5678" : "080-1234-5678"}</p>
+                        <p>{isEnglish ? "090-6605-9192" : "090-6605-9192"}</p>
                     </div>
                     
                 </div>
