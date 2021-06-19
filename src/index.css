@@ -16,3 +16,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.instagram-feed .crt-stack .crt-stack-feed-container{
+  padding:40px 20px 20px;
+}
+
+@media screen and (max-width: 768px){
+  .instagram-feed .crt-stack .crt-stack-feed-container{
+    flex-wrap: wrap;
+    width:100%;
+  }
+  .instagram-feed .crt-stack .crt-stacked-cards-box{
+    flex:auto;
+    width:100%;
+  }
+  .instagram-feed .crt-stack .crt-stack-content{
+    flex:auto;
+    max-height: 250px!important;
+    height:250px;
+  }
+  .instagram-feed .crt-stack .crt-stack-post-content .crt-stack-post-body .crt-stack-post-text-footer .crt-social-icon{
+    left:0;
+  }
+  .instagram-feed .crt-stack .crt-stack-post-content .crt-stack-post-body .crt-stack-post-text-footer .crt-post-username{
+    left: 25px;
+    bottom:21px;
+  }
+  .instagram-feed .crt-stack .crt-stack-post-content .crt-stack-post-body .crt-stack-post-text-footer .crt-post-share{
+    right:0px;
+    bottom:25px;
+  }
+
+  .instagram-feed .crt-stack .crt-stacked-cards-box .hidden-card{
+    width:100%;
+    margin-left: auto;
+  }
+}
