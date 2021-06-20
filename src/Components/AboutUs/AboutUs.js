@@ -46,7 +46,7 @@ function AboutUs({ menuOpen, openMenu, closeMenu, toEnglish, toJapanese, isEngli
                     <br />
                     <p className={styles.aboutUsText}> {isEnglish ? "Here at 9 Borden Coffee we hope everyone from all walks of life can enjoy our space and just chill out like it’s their second home." : "あの楽しかった毎日を、海外のような開放感のある自由な空間を、日本でも。ナインボーデンのように、お客様もスタッフもみんなが楽しくのんびり過ごせますように願いを込めました。" }</p>
                     <br />
-                    <p onClick ={toEnglish} className={`${styles.aboutUsText} ${styles.clickable}`}>{isEnglish ? null : "See English version"}</p>
+                    <p onClick ={isEnglish ? toJapanese : toEnglish} className={`${styles.aboutUsText} ${styles.clickable}`}>{isEnglish ? "日本語で見る" : "See English version"}</p>
                 </div>
             </div> 
         </div>

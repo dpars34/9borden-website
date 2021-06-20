@@ -1,0 +1,67 @@
+.instagramArea {
+    font-family: 'KoHo', sans-serif, 'Noto Sans JP', sans-serif;
+    background-color: #F6F6F6;
+    padding: 1rem 15vw 2rem 15vw;
+    position: relative;
+}
+
+.navDiv {
+    position: absolute;
+    top: -72px;
+    right: 5vw;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+    .icon {
+        display: none;
+    }
+}
+
+.icon {
+    margin-left: 1rem;
+    color: white;
+}
+
+@media screen and (max-width: 1050px) {
+    .instagramArea {
+        padding: 1rem 10vw 2rem 10vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .instagramArea {
+        padding: 1rem 5vw 2rem 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .instagramArea {
+        padding: 1rem 15vw 2rem 15vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .instagramArea {
+        padding: 1rem 10vw 2rem 10vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .instagramArea {
+        padding: 1rem 0vw 2rem 0vw;
+    }
+}
+.instagramFeed {
+    display: relative;
+    z-index: 0;
+    font-family: 'KoHo', sans-serif, 'Noto Sans JP', sans-serif;
+}
+
+.instagramFeedTitle {
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    
+}

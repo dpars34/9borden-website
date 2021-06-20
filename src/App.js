@@ -27,22 +27,20 @@ function App() {
 
   const toEnglish = () => {
     setIsEnglish(true)
-    console.log("toEnglish")
   }
 
   const toJapanese = () => {
     setIsEnglish(false)
-    console.log("toJapanese")
   }
   
    useEffect(() => {
   
     window.onscroll = () => {
-      if (window.scrollY >= window.innerHeight) {
+      if (window.scrollY >= (window.innerHeight - 150)) {
         setOnHomeScreen(false)
         setfirstLoadNavbar(false)
       }
-      if (window.scrollY < window.innerHeight) {
+      if (window.scrollY < (window.innerHeight - 150)) {
         setOnHomeScreen(true)
       }
     }

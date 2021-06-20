@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 .aboutUsSection{
     min-height: 100vh;
     background: url(AboutUsBG.jpeg) no-repeat center center; 
@@ -28,6 +30,7 @@
 .aboutUsText {
     color: white;
     margin: 0 15vw;
+    font-weight: 500;
 }
 
 .navbar {
