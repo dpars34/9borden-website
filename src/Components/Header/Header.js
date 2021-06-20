@@ -11,7 +11,7 @@ function Header({ menuOpen, onHomeScreen, firstLoadNavbar, openMenu, closeMenu, 
         <header className={firstLoadNavbar ? styles.headerPreload : onHomeScreen ? styles.headerNone : styles.header}>
             <div className={styles.mobileNavbar}>
                 <p onClick={openMenu} className={styles.hamburgerButton}><GiHamburgerMenu /></p>
-                <img className={styles.logoMobile} src={logo} alt=""/>
+                <a href="/"><img className={styles.logoMobile} src={logo} alt=""/></a>
                 <p className={styles.dummy}></p>
             </div>
 

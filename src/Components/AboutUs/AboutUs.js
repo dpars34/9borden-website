@@ -12,7 +12,7 @@ function AboutUs({ menuOpen, openMenu, closeMenu, toEnglish, toJapanese, isEngli
             
             <div className={styles.mobileNavbar}>
                 <p onClick={openMenu} className={styles.hamburgerButton}><GiHamburgerMenu /></p>
-                <img className={styles.logoMobile} src={logo} alt=""/>
+                <a href="/"><img className={styles.logoMobile} src={logo} alt=""/></a>
                 <p className={styles.dummy}></p>
             </div>
 
