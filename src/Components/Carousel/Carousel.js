@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Carousel.module.css'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
-import image1 from './carousel_images/IMG_7619.jpg'
-import image2 from './carousel_images/IMG_7629.jpg'
-import image3 from './carousel_images/IMG_8435.jpg'
-import image4 from './carousel_images/IMG_7556.jpg'
 
 
 function Carousel() {
@@ -51,10 +47,6 @@ function Carousel() {
                 <AiOutlineLeft className={styles.arrowLeft} onClick={prevImage}/>
                 <AiOutlineRight className={styles.arrowRight} onClick={nextImage}/>
             </div>
-            <img className={styles.imageLoad} src={image1} alt=""/>
-            <img className={styles.imageLoad} src={image2} alt=""/>
-            <img className={styles.imageLoad} src={image3} alt=""/>
-            <img className={styles.imageLoad} src={image4} alt=""/>
         </div>
     )   
 }
