@@ -3,6 +3,14 @@
     animation: open-menu 1s;
 }
 
+
+@media screen and (max-width: 450px) {
+    .foodMenuArea {
+        padding: 2rem 3vw;
+        animation: open-menu 1s;
+    }
+}
+
 @keyframes open-menu {
     0% {
         max-height: 0;
@@ -29,12 +37,14 @@
 
 .menuLeft {
     flex: 1;
+    min-width: 18rem;
 }
 
 .menuRight {
     flex: 1;
     padding-top: 0;
     margin-top: 0;
+    min-width: 18rem;
 }
 
 .imagesArea {

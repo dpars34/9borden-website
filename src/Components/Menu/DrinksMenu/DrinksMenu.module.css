@@ -2,6 +2,12 @@
     padding: 2rem 10vw;
 }
 
+@media screen and (max-width: 450px) {
+    .drinksMenuArea {
+        padding: 2rem 3vw;
+    }
+}
+
 .drinksMenuTitle {
     margin: 2rem 2rem 0 2rem;
     font-size: 3rem;
@@ -18,12 +24,14 @@
 
 .menuLeft {
     flex: 1;
+    min-width: 18rem;
 }
 
 .menuRight {
     flex: 1;
     padding-top: 0;
     margin-top: 0;
+    min-width: 18rem;
 }
 
 .imagesArea {
