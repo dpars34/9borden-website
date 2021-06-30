@@ -10,14 +10,14 @@
 .itemTitle {
     margin: 0 0.5rem 0.3rem 0;
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bolder;
 }
 
 .itemPrice {
     margin: 0;
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .extraInfo1 {
@@ -25,11 +25,12 @@
     padding: 0 0.2rem;
     border: black 1px solid;
     display:inline-block;
-    
+    font-size: 0.8rem;
 }
 
 .extraInfo2 {
     margin: 0;
     padding: 1rem 1rem 0 1rem;
     font-style: italic;
+    font-size: 0.8rem;
 }

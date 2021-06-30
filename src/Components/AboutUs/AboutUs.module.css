@@ -22,7 +22,7 @@
 
 .aboutUsTitle {
     color: white;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 400;
     padding: 1rem 15vw;
 }
@@ -31,6 +31,7 @@
     color: white;
     margin: 0 15vw;
     font-weight: 500;
+    font-size: 1rem;
 }
 
 .navbar {
