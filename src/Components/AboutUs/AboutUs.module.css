@@ -27,11 +27,18 @@
     padding: 1rem 15vw;
 }
 
-.aboutUsText {
+.aboutUsTextJp {
     color: white;
     margin: 0 15vw;
     font-weight: 500;
     font-size: 1rem;
+}
+
+.aboutUsTextEn {
+    color: white;
+    margin: 0 15vw;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .navbar {
@@ -144,10 +151,6 @@
 .bolder:hover {
     cursor: auto;
     text-decoration: none;
-}
-
-.clickable {
-    font-weight: bolder;
 }
 
 .clickable:hover {

@@ -10,7 +10,7 @@ function Access({isEnglish}) {
             <div className={styles.navDiv} id="access"></div>
             <h1 className={styles.accessTitle}>Access</h1>
 
-            <div className={styles.flexContainer}>
+            <div className={isEnglish ? styles.flexContainerEn : styles.flexContainerJp}>
                 <div className={styles.locationArea}>
                     <h3>{isEnglish ? "Location" : "所在地"}</h3>
                     

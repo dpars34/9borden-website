@@ -20,7 +20,7 @@
     font-size: 1.1rem;
 }
 
-.extraInfo1 {
+.extraInfo1Jp {
     margin: 0;
     padding: 0 0.2rem;
     border: black 1px solid;
@@ -28,9 +28,24 @@
     font-size: 0.8rem;
 }
 
-.extraInfo2 {
+.extraInfo2Jp {
     margin: 0;
     padding: 1rem 1rem 0 1rem;
     font-style: italic;
     font-size: 0.8rem;
+}
+
+.extraInfo1En {
+    margin: 0;
+    padding: 0 0.2rem;
+    border: black 1px solid;
+    display:inline-block;
+    font-size: 1rem;
+}
+
+.extraInfo2En {
+    margin: 0;
+    padding: 1rem 1rem 0 1rem;
+    font-style: italic;
+    font-size: 1rem;
 }

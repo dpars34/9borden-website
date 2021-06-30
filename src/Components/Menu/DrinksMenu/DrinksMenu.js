@@ -15,13 +15,13 @@ function DrinksMenu({isEnglish}) {
                 <div className={styles.menuLeft}>
                     {isEnglish ? drinksMenuLeftEnglish.map((item) => {
                         return (
-                            <SingleItem itemData={item} key={item.name}/>
+                            <SingleItem isEnglish={isEnglish} itemData={item} key={item.name}/>
                         )
                     }) 
                     
                     : drinksMenuLeftJapanese.map((item) => {
                         return (
-                            <SingleItem itemData={item} key={item.name}/>
+                            <SingleItem isEnglish={isEnglish} itemData={item} key={item.name}/>
                         )
                     })}
                 </div>
@@ -29,13 +29,13 @@ function DrinksMenu({isEnglish}) {
                 <div className={styles.menuRight}>
                     {isEnglish ? drinksMenuRightEnglish.map((item) => {
                         return (
-                            <SingleItem itemData={item} key={item.name}/>
+                            <SingleItem isEnglish={isEnglish} itemData={item} key={item.name}/>
                         )
                     })
                 
                     : drinksMenuRightJapanese.map((item) => {
                         return (
-                            <SingleItem itemData={item} key={item.name}/>
+                            <SingleItem isEnglish={isEnglish} itemData={item} key={item.name}/>
                         )
                     })}
                 </div>

@@ -30,8 +30,16 @@
     font-weight: 400;
 }
 
-.menuTitleText {
+.menuTitleTextJp {
     color: white;
     margin: 0 15vw;
     font-weight: 500;
+    font-size: 1rem;
+}
+
+.menuTitleTextEn {
+    color: white;
+    margin: 0 15vw;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
