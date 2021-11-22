@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './DrinksMenu.module.css'
 import SingleItem from '../SingleItem/SingleItem'
-import { drinksMenuLeftEnglish, drinksMenuRightEnglish, drinksMenuLeftJapanese, drinksMenuRightJapanese } from '../menuData'
+import { drinksMenuLeftEnglish, drinksMenuRightEnglish, drinksMenuLeftJapanese, drinksMenuRightJapanese } from '../../../Text/menuData'
 import image1 from './drinks_menu_images/drinks_img1.jpg'
 import image2 from './drinks_menu_images/drinks_img2.jpg'
 import image3 from './drinks_menu_images/drinks_img3.jpg'
