@@ -26,8 +26,8 @@ function Header({ menuOpen, onHomeScreen, firstLoadNavbar, openMenu, closeMenu, 
 
                 <div className={styles.rightSide}>
                     <div className={styles.socialMediaLinks}>
-                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.facebookIcon}`} target="_blank" rel="noreferrer" href="https://www.facebook.com/9bordencoffee/"><FaFacebook /></a>
-                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.instagramIcon}`} target="_blank" rel="noreferrer" href="https://www.instagram.com/9bordencoffee/?hl=en"><FaInstagram /></a>
+                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.facebookIcon}`} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/9bordencoffee/"><FaFacebook /></a>
+                        <a onClick={closeMenu} className={`${styles.navLink} ${styles.instagramIcon}`} target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/9bordencoffee/?hl=en"><FaInstagram /></a>
                     </div>
 
                     <div className={styles.langButtons}>

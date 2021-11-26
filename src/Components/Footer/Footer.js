@@ -7,8 +7,8 @@ function Footer() {
         <footer className={styles.footerArea}>
             <p className={styles.copyright}>© 9Borden Coffee</p>
             <div className={styles.socialMediaButtons}>
-                <a className={styles.facebookIcon} target="_blank" rel="noreferrer" href="https://www.facebook.com/9bordencoffee/"><FaFacebook /></a>
-                <a className={styles.instagramIcon} target="_blank" rel="noreferrer" href="https://www.instagram.com/9bordencoffee/?hl=en"><FaInstagram /></a>
+                <a className={styles.facebookIcon} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/9bordencoffee/"><FaFacebook /></a>
+                <a className={styles.instagramIcon} target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/9bordencoffee/?hl=en"><FaInstagram /></a>
             </div>
         </footer>
     )

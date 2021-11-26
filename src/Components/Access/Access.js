@@ -3,12 +3,13 @@ import styles from './Access.module.css'
 import { HiLocationMarker } from 'react-icons/hi'
 import { MdTrain } from 'react-icons/md'
 import { RiPhoneFill } from 'react-icons/ri'
+import { titles } from '../../Text/titles'
 
 function Access({isEnglish}) {
     return(
         <div className={styles.accessArea}>
             <div className={styles.navDiv} id="access"></div>
-            <h1 className={styles.accessTitle}>Access</h1>
+            <h1 className={styles.accessTitle}>{titles.access}</h1>
 
             <div className={isEnglish ? styles.flexContainerEn : styles.flexContainerJp}>
                 <div className={styles.locationArea}>
