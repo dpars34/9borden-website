@@ -238,7 +238,7 @@ export const drinksMenuLeftJapanese = [
 
 export const drinksMenuRightJapanese = [
     {
-        name: "ホットチョコレート/アイスチョコレート",
+        name: "ホットチョコレート/アイスチョコレート",
         price: "500",
         extraInfo1: "ホット/アイス",
     },
