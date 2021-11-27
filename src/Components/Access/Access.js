@@ -3,7 +3,10 @@ import styles from './Access.module.css'
 import { HiLocationMarker } from 'react-icons/hi'
 import { MdTrain } from 'react-icons/md'
 import { RiPhoneFill } from 'react-icons/ri'
-import { titles } from '../../Text/titles'
+
+import { titles } from '../../Text/mainTitles'
+import { accessText } from '../../Text/accessText'
+
 
 function Access({isEnglish}) {
     return(
@@ -22,17 +25,17 @@ function Access({isEnglish}) {
                         
                     <div className={styles.locationDetails}>
                         <HiLocationMarker className={styles.icon}/>
-                        <p>{isEnglish ? "3 Chome-7-15 Chikko, Minato Ward, Osaka, 552-0021" : "大阪市港区築港3丁目7−15 港振興ビル 111号室"}</p>
+                        <p>{isEnglish ? accessText.englishLocation : accessText.japaneseLocation}</p>
                     </div>
                         
                     <div className={styles.locationDetails}>
                         <MdTrain className={styles.icon}/>
-                        <p>{isEnglish ? "2 minute walk from Osakako Station (Chuo Line)" : "大阪メトロ中央線 大阪港駅から徒歩2分"}</p>
+                        <p>{isEnglish ? accessText.englishTransport : accessText.japaneseTransport}</p>
                     </div>
                         
                     <div className={styles.locationDetails}>
                         <RiPhoneFill className={styles.icon}/>
-                        <p>{isEnglish ? "090-6605-9192" : "090-6605-9192"}</p>
+                        <p>{isEnglish ? accessText.englishPhone : accessText.japanesePhone}</p>
                     </div>
                     
                 </div>
@@ -52,13 +55,13 @@ function Access({isEnglish}) {
                         </div>
 
                         <div className={styles.times}>
-                            <p>{isEnglish ? "7:30 - 18:00" : "7:30　〜　18:00"}</p>
-                            <p>{isEnglish ? "7:30 - 18:00" : "7:30　〜　18:00"}</p>
-                            <p>{isEnglish ? "7:30 - 18:00" : "7:30　〜　18:00"}</p>
-                            <p>{isEnglish ? "7:30 - 18:00" : "7:30　〜　18:00"}</p>
-                            <p>{isEnglish ? "7:30 - 18:00" : "7:30　〜　18:00"}</p>
-                            <p>{isEnglish ? "7:30 - 18:00" : "7:30　〜　18:00"}</p>
-                            <p>{isEnglish ? "7:30 - 18:00" : "7:30　〜　18:00"}</p>
+                            <p>{isEnglish ? accessText.englishMonday : accessText.japaneseMonday}</p>
+                            <p>{isEnglish ? accessText.englishTuesday : accessText.japaneseTuesday}</p>
+                            <p>{isEnglish ? accessText.englishWednesday : accessText.japaneseWednesday}</p>
+                            <p>{isEnglish ? accessText.englishThursday : accessText.japaneseThursday}</p>
+                            <p>{isEnglish ? accessText.englishFriday : accessText.japaneseFriday}</p>
+                            <p>{isEnglish ? accessText.englishSaturday : accessText.japaneseSaturday}</p>
+                            <p>{isEnglish ? accessText.englishSunday: accessText.japaneseSunday}</p>
                         </div>
                     </div>
                 </div>

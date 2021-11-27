@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './MenuTitle.module.css'
-import { titles } from '../../Text/titles'
+
+import { titles } from '../../Text/mainTitles'
+import { menuText } from '../../Text/menuText'
 
 function MenuTitle({ isEnglish }) {
     return(
@@ -9,9 +11,9 @@ function MenuTitle({ isEnglish }) {
             <div className={styles.flexContainer}>
                 <div className={styles.textArea}>
                     <h1 className={styles.menuTitle}>{titles.menu}</h1>
-                    <p className={isEnglish ? styles.menuTitleTextEn : styles.menuTitleTextJp}>{isEnglish ? "We serve speciality coffee roasted by TAOCA COFFEE and Mel Coffee Roasters. We also have 3 different kinds of toasted sandwiches and different flavor sodas to quench that thirst in the summer.": "コーヒーはTAOCA COFFEEとMel Coffee Roastersのスペシャルティコーヒーを使いお淹れしています。応援している大好きなロースターさんたちです。他にはカラフルなソーダや、食べ物は3種類のホットサンドイッチなどもあります。"}</p>
+                    <p className={isEnglish ? styles.menuTitleTextEn : styles.menuTitleTextJp}>{isEnglish ? menuText.englishText1 : menuText.japanesetext1}</p>
                     <br />
-                    <p className={isEnglish ? styles.menuTitleTextEn : styles.menuTitleTextJp}>{isEnglish ? "For the time being we are also serving our take of Hawaiian Acai Bowl (Vegan) and Mexican Chicken Burrito (Vegan and Vegetarian option available).": "アサイーボウルとブリトーはヴィーガンの方も召し上がっていただけます。"}</p>
+                    <p className={isEnglish ? styles.menuTitleTextEn : styles.menuTitleTextJp}>{isEnglish ? menuText.englishText2 : menuText.japaneseText2}</p>
                 </div>
             </div>
             

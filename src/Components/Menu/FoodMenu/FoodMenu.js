@@ -5,7 +5,7 @@ import { foodMenuLeftEnglish, foodMenuRightEnglish, foodMenuLeftJapanese, foodMe
 import image1 from './food_menu_images/food_img1.jpg'
 import image2 from './food_menu_images/food_img2.jpg'
 import image3 from './food_menu_images/food_img3.jpg'
-import { titles } from '../../../Text/titles'
+import { titles } from '../../../Text/mainTitles'
 
 function FoodMenu({isEnglish}) {
     return (

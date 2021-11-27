@@ -5,7 +5,7 @@ import { drinksMenuLeftEnglish, drinksMenuRightEnglish, drinksMenuLeftJapanese, 
 import image1 from './drinks_menu_images/drinks_img1.jpg'
 import image2 from './drinks_menu_images/drinks_img2.jpg'
 import image3 from './drinks_menu_images/drinks_img3.jpg'
-import { titles } from '../../../Text/titles'
+import { titles } from '../../../Text/mainTitles'
 
 
 function DrinksMenu({isEnglish}) {
