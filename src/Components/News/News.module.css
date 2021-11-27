@@ -47,12 +47,6 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .newsArea {
-        padding: 1rem 0vw 2rem 0vw;
-    }
-}
-
 .newsTitle {
     font-weight: 400;
     text-align: center;
@@ -64,4 +58,5 @@
     border: none;
     height: 1px;
     background-color: #808080;
+    margin-top: 2rem;
 }
