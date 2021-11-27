@@ -1,0 +1,17 @@
+.newsItemArea {
+    padding-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.info {
+    font-size: 1rem;
+}
+
+.date {
+    font-size: 1rem;
+    font-style: italic;
+}

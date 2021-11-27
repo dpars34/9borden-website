@@ -7,6 +7,7 @@ import Header from './Components/Header/Header'
 import InstagramFeed from './Components/InstagramFeed/InstagramFeed'
 import Menu from './Components/Menu/Menu'
 import MenuTitle from './Components/MenuTitle/MenuTitle'
+import News from './Components/News/News'
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
     <div>
       <Header menuOpen={menuOpen} onHomeScreen={onHomeScreen} firstLoadNavbar={firstLoadNavbar} openMenu={openMenu} closeMenu={closeMenu} toEnglish={toEnglish} toJapanese={toJapanese} isEnglish={isEnglish}/>
       <AboutUs menuOpen={menuOpen} openMenu={openMenu} closeMenu={closeMenu} toEnglish={toEnglish} toJapanese={toJapanese} isEnglish={isEnglish}/>
+      <News isEnglish={isEnglish}/>
       <InstagramFeed />
       <MenuTitle isEnglish={isEnglish}/>
       <Menu isEnglish={isEnglish}/>
