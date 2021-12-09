@@ -23,12 +23,12 @@ export const japaneseText = [
         title: "二番",
         info: "これは二番です",
         date: "2021年　11月"
-    }
+    },
+
+
 ]
 
 /*
-
-参考として使ってください。
 
 export const englishText = [
     {
