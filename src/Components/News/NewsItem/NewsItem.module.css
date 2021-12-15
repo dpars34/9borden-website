@@ -11,6 +11,16 @@
     font-size: 1rem;
 }
 
+.link {
+    all: unset;
+    font-weight: bolder;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .date {
     font-size: 1rem;
     font-style: italic;
