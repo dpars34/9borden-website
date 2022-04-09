@@ -3,6 +3,7 @@ import styles from './Access.module.css'
 import { HiLocationMarker } from 'react-icons/hi'
 import { MdTrain } from 'react-icons/md'
 import { RiPhoneFill } from 'react-icons/ri'
+import { HiOutlineMail } from 'react-icons/hi'
 
 import { titles } from '../../Data/mainTitles'
 import { accessText } from '../../Data/accessText'
@@ -36,6 +37,11 @@ function Access({isEnglish}) {
                     <div className={styles.locationDetails}>
                         <RiPhoneFill className={styles.icon}/>
                         <p>{isEnglish ? accessText.englishPhone : accessText.japanesePhone}</p>
+                    </div>
+
+                    <div className={styles.locationDetails}>
+                        <HiOutlineMail className={styles.icon}/>
+                        <p>{isEnglish ? accessText.englishEmail : accessText.japaneseEmail}</p>
                     </div>
                     
                 </div>
