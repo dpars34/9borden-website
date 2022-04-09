@@ -67,3 +67,17 @@
     object-fit: cover;
     vertical-align: bottom;
 }
+
+.emptyImage {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .emptyImage {
+        display: block;
+        height: 12rem;
+        flex: 1;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -52,7 +52,7 @@ function FoodMenu({isEnglish}) {
                     <p className={styles.caption}>{isEnglish ? "Açaí Bowl" : "アサイーボウル"}<br />{isEnglish ? "850 yen" : "850円"}</p>
                 </div>
 
-                <div className={styles.singleImage}></div>
+                <div className={styles.emptyImage}></div>
                 {/* <div className={styles.singleImage}>
                     <img className={styles.menuImage}src={image3} alt="Food menu"/>
                     <p className={styles.caption}>{isEnglish ? "Affogato" : "アフォガード"}<br />{isEnglish ? "650 yen" : "650円"}</p>
