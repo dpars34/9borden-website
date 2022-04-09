@@ -42,20 +42,21 @@ function FoodMenu({isEnglish}) {
             </div>
 
             <div className={styles.imagesArea}>
-                <div className={styles.singleImage}>
+                {/* <div className={styles.singleImage}>
                     <img className={styles.menuImage}src={image1} alt="Food menu"/>
                     <p className={styles.caption}>{isEnglish ? "Burrito (Carnitas -Limited-)" : "ブリトー（期間限定のポーク）"}<br />{isEnglish ? "1200 yen" : "1200円"}</p>
-                </div>
+                </div> */}
 
                 <div className={styles.singleImage}>
                     <img className={styles.menuImage}src={image2} alt="Food menu"/>
                     <p className={styles.caption}>{isEnglish ? "Açaí Bowl" : "アサイーボウル"}<br />{isEnglish ? "850 yen" : "850円"}</p>
                 </div>
 
-                <div className={styles.singleImage}>
+                <div className={styles.singleImage}></div>
+                {/* <div className={styles.singleImage}>
                     <img className={styles.menuImage}src={image3} alt="Food menu"/>
                     <p className={styles.caption}>{isEnglish ? "Affogato" : "アフォガード"}<br />{isEnglish ? "650 yen" : "650円"}</p>
-                </div>
+                </div> */}
             </div>
 
         </div>
