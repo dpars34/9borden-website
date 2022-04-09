@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './InstagramFeed.module.css'
 import { MdWifi } from 'react-icons/md'
 import { BsPlug } from 'react-icons/bs'
-import { titles } from '../../Text/mainTitles'
+import { titles } from '../../Data/mainTitles'
 
 function InstagramFeed() {
     return(

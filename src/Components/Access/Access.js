@@ -4,8 +4,8 @@ import { HiLocationMarker } from 'react-icons/hi'
 import { MdTrain } from 'react-icons/md'
 import { RiPhoneFill } from 'react-icons/ri'
 
-import { titles } from '../../Text/mainTitles'
-import { accessText } from '../../Text/accessText'
+import { titles } from '../../Data/mainTitles'
+import { accessText } from '../../Data/accessText'
 
 
 function Access({isEnglish}) {

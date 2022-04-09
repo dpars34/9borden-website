@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './MenuTitle.module.css'
 
-import { titles } from '../../Text/mainTitles'
-import { menuText } from '../../Text/menuText'
+import { titles } from '../../Data/mainTitles'
+import { menuText } from '../../Data/menuText'
 
 function MenuTitle({ isEnglish }) {
     return(

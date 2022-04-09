@@ -5,8 +5,8 @@ import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-import { titles } from '../../Text/mainTitles'
-import { aboutUsText } from '../../Text/aboutUsText'
+import { titles } from '../../Data/mainTitles'
+import { aboutUsText } from '../../Data/aboutUsText'
 
 
 function AboutUs({ menuOpen, openMenu, closeMenu, toEnglish, toJapanese, isEnglish}) {

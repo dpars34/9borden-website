@@ -1,16 +1,16 @@
 import React from 'react'
 import styles from './FoodMenu.module.css'
 import SingleItem from '../SingleItem/SingleItem'
-import { foodMenuLeftEnglish, foodMenuRightEnglish, foodMenuLeftJapanese, foodMenuRightJapanese } from '../../../Text/menuData'
+import { foodMenuLeftEnglish, foodMenuRightEnglish, foodMenuLeftJapanese, foodMenuRightJapanese } from '../../../Data/menuData'
 import image1 from './food_menu_images/food_img1.jpg'
 import image2 from './food_menu_images/food_img2.jpg'
 import image3 from './food_menu_images/food_img3.jpg'
-import { titles } from '../../../Text/mainTitles'
+import { titles } from '../../../Data/mainTitles'
 
 function FoodMenu({isEnglish}) {
     return (
         <div className={styles.foodMenuArea}>
-            <h2　className={styles.foodMenuTitle}>{titles.food}</h2>
+            <h2 className={styles.foodMenuTitle}>{titles.food}</h2>
             <div className={styles.flexContainer}>
                 <div className={styles.menuLeft}>
                     {isEnglish ? foodMenuLeftEnglish.map((item) => {
@@ -49,7 +49,7 @@ function FoodMenu({isEnglish}) {
 
                 <div className={styles.singleImage}>
                     <img className={styles.menuImage}src={image2} alt="Food menu"/>
-                    <p className={styles.caption}>{isEnglish ? "Açaí Bowl" : "アサイーボウル"}<br />{isEnglish ? "750 yen" : "750円"}</p>
+                    <p className={styles.caption}>{isEnglish ? "Açaí Bowl" : "アサイーボウル"}<br />{isEnglish ? "850 yen" : "850円"}</p>
                 </div>
 
                 <div className={styles.singleImage}>
