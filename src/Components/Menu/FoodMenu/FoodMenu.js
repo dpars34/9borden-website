@@ -2,9 +2,9 @@ import React from 'react'
 import styles from './FoodMenu.module.css'
 import SingleItem from '../SingleItem/SingleItem'
 import { foodMenuLeftEnglish, foodMenuRightEnglish, foodMenuLeftJapanese, foodMenuRightJapanese } from '../../../Data/menuData'
-import image1 from './food_menu_images/food_img1.jpg'
+// import image1 from './food_menu_images/food_img1.jpg'
 import image2 from './food_menu_images/food_img2.jpg'
-import image3 from './food_menu_images/food_img3.jpg'
+// import image3 from './food_menu_images/food_img3.jpg'
 import { titles } from '../../../Data/mainTitles'
 
 function FoodMenu({isEnglish}) {
